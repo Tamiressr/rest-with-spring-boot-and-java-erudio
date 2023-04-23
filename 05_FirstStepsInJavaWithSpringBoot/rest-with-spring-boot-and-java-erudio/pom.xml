@@ -40,6 +40,15 @@
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
 		</dependency>
+
+		<!-- Flyway for database migration-->
+		<!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-core -->
+		<dependency>
+			<groupId>org.flywaydb</groupId>
+			<artifactId>flyway-core</artifactId>
+		</dependency>
+
+
 		<!-- https://mvnrepository.com/artifact/com.github.dozermapper/dozer-core -
 	Dozer será descontinuado, sugestão de mudança para modelmapper ou similar
 	-->
