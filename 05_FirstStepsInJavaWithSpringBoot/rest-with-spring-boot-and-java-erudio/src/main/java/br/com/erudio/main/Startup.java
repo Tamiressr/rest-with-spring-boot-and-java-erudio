@@ -1,4 +1,4 @@
-package br.com.erudio;
+package br.com.erudio.main;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

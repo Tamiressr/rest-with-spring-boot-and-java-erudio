@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    jdbcUrl: jdbc:postgresql://localhost:5432/rest_spring_java_erudio?useTimezone=true&SserverTimezone=UTC
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/rest_spring_java_erudio?useTimezone=true&SserverTimezone=UTC
+    username: postgres
+    password: logique
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+      show-sql: false
+
+
