@@ -1,4 +1,4 @@
-package br.com.erudio.controller;
+package br.com.erudio.controllers;
 
 import br.com.erudio.data.vo.v1.PersonVO;
 import br.com.erudio.data.vo.v2.PersonVOV2;
@@ -78,6 +78,8 @@ public class PersonController {
 	public PersonVO create(@RequestBody PersonVO person){
 		return personService.create(person);
 	}
+
+
 	@PutMapping(produces ={MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML,MediaType.APPLICATION_YML},
 			consumes ={MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML,MediaType.APPLICATION_YML} )
 	@Operation( summary="Updates a Person", description="Updates a Person by passing in JSON, XML or YML representation of a person",tags={"People"},

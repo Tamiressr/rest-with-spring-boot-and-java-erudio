@@ -1,5 +1,7 @@
 package br.com.erudio.model;
 
+
+
 import jakarta.persistence.*;
 
 import java.io.Serializable;

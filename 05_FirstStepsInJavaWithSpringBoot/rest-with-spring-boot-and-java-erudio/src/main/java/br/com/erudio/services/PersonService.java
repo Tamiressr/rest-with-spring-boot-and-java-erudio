@@ -1,6 +1,6 @@
 package br.com.erudio.services;
 
-import br.com.erudio.controller.PersonController;
+import br.com.erudio.controllers.PersonController;
 import br.com.erudio.data.vo.v1.PersonVO;
 import br.com.erudio.data.vo.v2.PersonVOV2;
 import br.com.erudio.exceptions.RequiredObjectIsnullException;
@@ -52,6 +52,7 @@ public class PersonService {
 		logger.info("Creating one person!!!");
 		var entity = DozerMapper.parseObject(person, Person.class);
 		var vo = DozerMapper.parseObject(repository.save(entity), PersonVO.class);
+
 		vo.add(linkTo(methodOn(PersonController.class).findById(vo.getKey())).withSelfRel());
 		return vo;
 	}
